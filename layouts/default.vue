@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" app>
+    <v-navigation-drawer permanent :mini-variant="miniVariant" app>
       <v-list class="pa-0">
         <v-list-item
           style="cursor: pointer"
@@ -49,7 +49,6 @@ export default {
   name: 'DefaultLayout',
   data() {
     return {
-      drawer: true,
       items: [
         {
           icon: 'mdi-apps',
@@ -58,8 +57,8 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire',
+          title: 'Contact',
+          to: '/contact',
         },
       ],
       miniVariant: true,
